@@ -30,15 +30,15 @@ public class parcial1 {
             if (retiro <= SALDOINICIAL) {
                 nuevoSaldo = SALDOINICIAL - retiro;
                 System.out.println("Su saldo actual es: " + nuevoSaldo + ", Muchas Gracias!!!");
-            
+            } else {
                 // Mensaje diferenciado según si hubo costo de transacción
                 if (retiro > 200000) {
                     System.out.println("El valor solicitado más el costo de la transacción es mayor al saldo");
-                
+                } else {
                     System.out.println("El valor solicitado es mayor al saldo actual....");
                 }
             }
-        
+        } else {
             System.out.println("Su clave no es correcta...intenta nuevamente....");
         }
         
